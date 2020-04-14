@@ -2,6 +2,7 @@ package com.example.listviewandadapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -21,7 +22,11 @@ public class MainActivity extends AppCompatActivity {
       //  populateList();
         generateView(populateList());
     }
-    
+    public void tableActivity(View view){
+        //Table table=new Table();
+        Intent intent=new Intent(this,Table.class);
+        startActivity(intent);
+    }
     private ArrayList<String> populateList(){
         ArrayList<String> names=new ArrayList<>();
         names.add("Hasan");

@@ -20,4 +20,15 @@
         android:footerDividersEnabled = "false"
         android:headerDividersEnabled = "false"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:text="Move to Table Printer"
+        app:layout_constraintEnd_toEndOf="@+id/list1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="tableActivity"
+        ></Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
